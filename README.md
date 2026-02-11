@@ -24,7 +24,7 @@ Single-page static site for a research-focused professional homepage, ready for 
 
 Current `index.html` metadata is configured for:
 
-- `https://jimmydx.github.io/research-home/`
+- `https://jimmydx.github.io/research-homepage/`
 
 ## Before Going Live
 
