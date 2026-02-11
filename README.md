@@ -14,7 +14,7 @@ Single-page static site for a research-focused professional homepage, ready for 
 
 ## Publish On GitHub Pages (Project Site)
 
-1. Create a GitHub repository (any name, for example `research-homepage`).
+1. Create a GitHub repository (any name, for example `research-home`).
 2. Push this folder contents to the repository root.
 3. In GitHub, open `Settings` -> `Pages`.
 4. Set Source to `Deploy from a branch`.
@@ -24,7 +24,7 @@ Single-page static site for a research-focused professional homepage, ready for 
 
 Current `index.html` metadata is configured for:
 
-- `https://jimmydx.github.io/research-homepage/`
+- `https://jimmydx.github.io/research-home/`
 
 ## Before Going Live
 
