@@ -30,8 +30,6 @@ Current `index.html` metadata is configured for:
 
 Update these placeholders in `index.html`:
 
-- ORCID profile link (`https://orcid.org/` placeholder)
-- Google Scholar profile link (currently placeholder)
 - Any project media embeds you want to replace
 
 Replace this file with your real CV:
