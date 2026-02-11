@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Multimodal sensor fusion concept</title>
+  <desc id="desc">Diagram with sensor streams merging into a central fusion core and output confidence metrics.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#edf6fb"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="node" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d6f8f"/>
+      <stop offset="100%" stop-color="#0b5d76"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)"/>
+  <g font-family="Source Sans 3, Arial, sans-serif" fill="#173149">
+    <text x="46" y="54" font-size="32" font-weight="700">Multimodal Sensor Fusion Benchmark</text>
+    <text x="46" y="86" font-size="20">Input streams, fusion core, and confidence-aware output layer</text>
+  </g>
+
+  <g fill="#ffffff" stroke="#b9d3df" stroke-width="2">
+    <rect x="58" y="132" rx="14" ry="14" width="200" height="80"/>
+    <rect x="58" y="240" rx="14" ry="14" width="200" height="80"/>
+    <rect x="58" y="348" rx="14" ry="14" width="200" height="80"/>
+
+    <rect x="380" y="186" rx="20" ry="20" width="220" height="190" fill="url(#node)" stroke="#0c5e78"/>
+    <rect x="704" y="160" rx="14" ry="14" width="200" height="90"/>
+    <rect x="704" y="286" rx="14" ry="14" width="200" height="90"/>
+  </g>
+
+  <g font-family="Source Sans 3, Arial, sans-serif" font-size="22" fill="#18384f" font-weight="600">
+    <text x="88" y="182">Vision Stream</text>
+    <text x="88" y="290">Telemetry Stream</text>
+    <text x="88" y="398">State Estimate Stream</text>
+  </g>
+
+  <g font-family="Source Sans 3, Arial, sans-serif" fill="#ffffff">
+    <text x="438" y="250" font-size="30" font-weight="700">Fusion Core</text>
+    <text x="430" y="286" font-size="20">Alignment + Filtering</text>
+    <text x="430" y="318" font-size="20">Uncertainty Modeling</text>
+  </g>
+
+  <g font-family="Source Sans 3, Arial, sans-serif" fill="#18384f">
+    <text x="736" y="214" font-size="22" font-weight="600">Decision Output</text>
+    <text x="736" y="340" font-size="22" font-weight="600">Confidence Report</text>
+  </g>
+
+  <g fill="none" stroke="#0d6f8f" stroke-width="6" stroke-linecap="round">
+    <path d="M258 172h104"/>
+    <path d="M258 280h104"/>
+    <path d="M258 388h104"/>
+    <path d="M600 250h90"/>
+    <path d="M600 318h90"/>
+  </g>
+  <g fill="#0d6f8f">
+    <circle cx="362" cy="172" r="8"/>
+    <circle cx="362" cy="280" r="8"/>
+    <circle cx="362" cy="388" r="8"/>
+    <circle cx="690" cy="250" r="8"/>
+    <circle cx="690" cy="318" r="8"/>
+  </g>
+</svg>

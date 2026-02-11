@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Mission operations analytics workflow</title>
+  <desc id="desc">Timeline style visualization of detect, diagnose, respond, and validate stages.</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0f7fb"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="phase" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0d6f8f"/>
+      <stop offset="100%" stop-color="#1192a8"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg2)"/>
+  <g font-family="Source Sans 3, Arial, sans-serif">
+    <text x="54" y="56" font-size="32" font-weight="700" fill="#143149">Mission Operations Analytics Toolkit</text>
+    <text x="54" y="88" font-size="20" fill="#2e4a63">Closed-loop workflow for faster mission diagnosis and adaptation</text>
+  </g>
+
+  <line x1="90" y1="270" x2="870" y2="270" stroke="#89b5c5" stroke-width="8" stroke-linecap="round"/>
+
+  <g font-family="Source Sans 3, Arial, sans-serif" font-size="20" fill="#143149">
+    <circle cx="150" cy="270" r="50" fill="url(#phase)"/>
+    <text x="121" y="276" fill="#ffffff" font-weight="700">1</text>
+    <text x="104" y="355" font-weight="700">Detect</text>
+    <text x="68" y="382" font-size="16">Anomaly trigger</text>
+
+    <circle cx="350" cy="270" r="50" fill="url(#phase)"/>
+    <text x="321" y="276" fill="#ffffff" font-weight="700">2</text>
+    <text x="296" y="355" font-weight="700">Diagnose</text>
+    <text x="258" y="382" font-size="16">Root-cause analysis</text>
+
+    <circle cx="550" cy="270" r="50" fill="url(#phase)"/>
+    <text x="521" y="276" fill="#ffffff" font-weight="700">3</text>
+    <text x="501" y="355" font-weight="700">Respond</text>
+    <text x="467" y="382" font-size="16">Action planning</text>
+
+    <circle cx="750" cy="270" r="50" fill="url(#phase)"/>
+    <text x="721" y="276" fill="#ffffff" font-weight="700">4</text>
+    <text x="700" y="355" font-weight="700">Validate</text>
+    <text x="661" y="382" font-size="16">Performance review</text>
+  </g>
+
+  <rect x="120" y="438" width="720" height="54" rx="12" ry="12" fill="#e0eff6" stroke="#bdd9e5"/>
+  <text x="480" y="472" text-anchor="middle" font-family="Source Sans 3, Arial, sans-serif" font-size="22" font-weight="700" fill="#1d4a61">Outcome: Faster review cycles with higher decision confidence</text>
+</svg>

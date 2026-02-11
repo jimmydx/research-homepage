@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="title desc">
+  <title id="title">Research profile illustration</title>
+  <desc id="desc">Abstract illustration with orbit lines, grid, and profile silhouette representing aerospace research.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e4f3f8"/>
+      <stop offset="100%" stop-color="#f7fbfd"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d6f8f"/>
+      <stop offset="100%" stop-color="#0b5971"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="640" fill="url(#bg)"/>
+  <g opacity="0.65" fill="none" stroke="#86b7c8">
+    <path d="M40 80h560M40 160h560M40 240h560M40 320h560M40 400h560M40 480h560M40 560h560"/>
+    <path d="M80 40v560M160 40v560M240 40v560M320 40v560M400 40v560M480 40v560M560 40v560"/>
+  </g>
+  <circle cx="320" cy="320" r="210" fill="none" stroke="#82adbc" stroke-width="3"/>
+  <circle cx="320" cy="320" r="150" fill="none" stroke="#9fc3cf" stroke-width="2"/>
+  <circle cx="320" cy="320" r="96" fill="#ffffff" stroke="#c1dbe4" stroke-width="2"/>
+  <path d="M228 420c0-46 35-78 92-78s92 32 92 78v52H228z" fill="url(#accent)"/>
+  <circle cx="320" cy="266" r="62" fill="#0f6f8d"/>
+  <path d="M270 252c12-36 84-38 100 4-10-44-92-44-100-4z" fill="#164963" opacity="0.75"/>
+  <g fill="#ffffff">
+    <circle cx="304" cy="264" r="6"/>
+    <circle cx="340" cy="264" r="6"/>
+  </g>
+  <path d="M300 294c10 12 30 12 40 0" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <g fill="#0d6f8f" opacity="0.9">
+    <circle cx="95" cy="130" r="9"/>
+    <circle cx="548" cy="194" r="9"/>
+    <circle cx="126" cy="468" r="9"/>
+    <circle cx="548" cy="500" r="9"/>
+  </g>
+  <path d="M95 130c72 34 138 62 212 63s150-31 241 1" fill="none" stroke="#0d6f8f" stroke-width="3" stroke-linecap="round"/>
+  <path d="M126 468c94-75 187-108 292-72 54 19 89 52 130 104" fill="none" stroke="#0d6f8f" stroke-width="3" stroke-linecap="round"/>
+  <text x="50%" y="602" text-anchor="middle" font-family="Merriweather, serif" font-size="26" fill="#13415a">Research to Mission Readiness</text>
+</svg>
