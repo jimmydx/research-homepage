@@ -31,7 +31,11 @@ The original video and official gallery remain the authoritative sources for dat
 
 ## Pending photography and CV
 
-Portrait, CEDAR 2026, and COSPAR 2026 photos are not supplied yet. Their placeholders are restricted to the development preview. Captions and photographer credits must be confirmed from the supplied originals before publishing.
+Portrait, CEDAR 2026, and COSPAR 2026 photographs were supplied by Jaime on September 25. Originals remain untouched in the user's Lightroom Exports folder. WebP derivatives use quality 82 with metadata omitted: portrait at widths 600/1200; conference photos at 800/1600. Portrait display uses a 4:5 CSS crop; conference frames are 3:2 with contain sizing to preserve full scene content, including the COSPAR lectern. No generated image content or color edits.
+
+Source mapping: `DSC08398.jpg` → `cedar-2026-*`; `DSC09819-2.jpg` → `cospar-2026-*`; `DSC08546_CRNR04-3.jpg` → `portrait-*`.
+
+AGU 2025 and EGU 2025 photos, photographer credits, and the COSPAR title/link remain pending. The AGU caption comes from the existing abstract PDF and needs confirmation against the final presentation. Pending material is confined to local preview, and the publication check blocks release until resolved.
 
 The maintained CV folder was checked. Its September 16 PDF is byte-identical to the previously reviewed draft (SHA-256 `0613de1208742ddf45eb28cd4ccc2f7330864b1ddeeb0362eeedb74c30884b6e`). It still contains inconsistent role wording and unresolved factual details, so no download is linked. Older versions are not substituted as current.
 
@@ -58,3 +62,10 @@ Editorial interpretation: “satellite determination” was rendered as “satel
 LinkedIn URL supplied directly by Jaime: https://www.linkedin.com/in/jaime-aguilar-guerrero-profile/
 
 ORCID and LinkedIn marks are local SVG assets from Font Awesome Free 6.x (FortAwesome/Font-Awesome); the supplied license is preserved in `assets/icons/FONT-AWESOME-LICENSE.txt`. Icons are used under CC BY 4.0. Source SVGs retain Font Awesome's embedded attribution. Brand trademarks belong to their respective owners. The AWE globe/wave and Eos article symbols are custom navigation icons, not official mission or publisher logos.
+
+## Conference caption references
+
+- CEDAR 2026: https://cedarscience.org/workshop/2026-workshop-hazards lists Jaime's talk, “Multi-layer Characterization of Convective Gravity Waves from the CGWaveS Campaign, AWE, and GNSS.” The visible projected slide in the supplied photograph is consistent with this title.
+- EGU 2025: https://meetingorganizer.copernicus.org/EGU25/EGU25-13773.html documents “Observing Mesospheric Gravity Waves with NASA’s AWE Mission and Correlating to GNSS TEC Maps,” first author Jaime Aguilar Guerrero.
+- AGU 2025: existing `assets/docs/AGU-2025-abstract.pdf`; title reproduced in the development preview pending confirmation.
+- COSPAR event identification and Florence/August 2026 come from the supplied photograph's lectern signage; no presentation title inferred.

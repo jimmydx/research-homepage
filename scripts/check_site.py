@@ -30,6 +30,8 @@ class Site(HTMLParser):
             self.refs.extend(item.strip().split()[0] for item in a['srcset'].split(','))
         if tag == 'img' and not a.get('alt'):
             self.errors.append('Image needs descriptive alt text: ' + a.get('src', ''))
+        if 'data-content-pending' in a:
+            self.pending.append(a['data-content-pending'])
         if 'photo-pending' in a.get('class', '').split():
             self.pending.append(a.get('data-photo-slot', 'unknown'))
 
@@ -60,7 +62,7 @@ def main():
             if not urlsplit(ref).scheme and not (css.parent / ref).is_file():
                 site.errors.append('Missing CSS asset: ' + ref)
     if args.publish and site.pending:
-        site.errors.append('Photos still pending: ' + ', '.join(site.pending))
+        site.errors.append('Publication items still pending: ' + ', '.join(site.pending))
     if site.errors:
         print('\n'.join('FAIL: ' + item for item in site.errors))
         return 1
