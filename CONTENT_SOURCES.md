@@ -52,3 +52,9 @@ The official [USU gallery](https://awe.physics.usu.edu/data/3d/) documents Jaime
 Technical terminology: these datasets are described collectively as “atmospheric reanalysis and model products.” WACCM-X is a whole-atmosphere numerical model ([NCAR/CESM](https://www.cesm.ucar.edu/models/waccm-x)); NAVGEM is a global atmospheric prediction/modeling system with analysis products ([NRL](https://www.nrl.navy.mil/Media/News/Article/2562562/nrl-research-team-honored-with-navy-acquisition-excellence-technology-transitio/)). The page does not label every listed system as a reanalysis.
 
 Editorial interpretation: “satellite determination” was rendered as “satellite orbit determination,” paired with attitude analysis. The copy makes no claim of spacecraft attitude-control system development or of overall AWE mission leadership.
+
+## Header profile links and icons
+
+LinkedIn URL supplied directly by Jaime: https://www.linkedin.com/in/jaime-aguilar-guerrero-profile/
+
+ORCID and LinkedIn marks are local SVG assets from Font Awesome Free 6.x (FortAwesome/Font-Awesome); the supplied license is preserved in `assets/icons/FONT-AWESOME-LICENSE.txt`. Icons are used under CC BY 4.0. Source SVGs retain Font Awesome's embedded attribution. Brand trademarks belong to their respective owners. The AWE globe/wave and Eos article symbols are custom navigation icons, not official mission or publisher logos.
