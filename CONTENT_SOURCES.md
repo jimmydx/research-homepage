@@ -42,3 +42,13 @@ The MITIGATE overview paraphrases the ERAU announcement: connect severe-weather 
 The AtmoSense overview paraphrases DARPA's program description: understand energy propagation from transient surface events through the atmosphere to the ionosphere and explore the information in remotely detectable signatures. Past tense reflects DARPA's completed-program status. The AIRWaveS sentence draws on ERAU's description of source-to-sensor simulations, field tests, signal detectability, and model validation.
 
 The revised smaller typography and earth/blue palette follow the user's feedback; they intentionally update the earlier mockups.
+
+## Broader expertise, AWE leadership, and XR experience
+
+Added from Jaime's direct description on September 25, 2026: principal investigator for the AWE student collaboration at ERAU; student support for simulations and GNSS comparisons; simulations, spectral analysis, comparisons across scales and atmospheric regimes; convective-system responses in the upper atmosphere; tropospheric source identification; satellite orbit/attitude work; ERA5, MERRA-2, NAVGEM, and WACCM-X products; and practical XR experience with Apple Vision Pro and augmented reality headsets. Personal roles and experience are user-supplied, not inferred from third-party descriptions.
+
+The official [USU gallery](https://awe.physics.usu.edu/data/3d/) documents Jaime's AWE visualization work. The coauthored [Eos feature](https://eos.org/features/extended-reality-offers-opportunities-for-scientific-show-and-tell) supplies the public XR perspective; it is not presented as proof of a particular deployed headset application.
+
+Technical terminology: these datasets are described collectively as “atmospheric reanalysis and model products.” WACCM-X is a whole-atmosphere numerical model ([NCAR/CESM](https://www.cesm.ucar.edu/models/waccm-x)); NAVGEM is a global atmospheric prediction/modeling system with analysis products ([NRL](https://www.nrl.navy.mil/Media/News/Article/2562562/nrl-research-team-honored-with-navy-acquisition-excellence-technology-transitio/)). The page does not label every listed system as a reanalysis.
+
+Editorial interpretation: “satellite determination” was rendered as “satellite orbit determination,” paired with attitude analysis. The copy makes no claim of spacecraft attitude-control system development or of overall AWE mission leadership.
