@@ -60,7 +60,7 @@ h1 span { display: block; }
 .bio p:not(.bio-lead) { font-size: 18px; }
 .project-summary { margin-top: 28px; padding-top: 24px; border-top: 1px solid #514b3f; }
 .project-summary h3 { color: var(--clay); font-size: 24px; margin-bottom: 12px; }
-.awe-summary h3 { color: var(--accent); }
+.expertise-summary h3 { color: var(--accent); }
 .project-summary p + p { margin-top: 12px; }
 .project-summary > a { margin-top: 12px; }
 .bio a { display: inline-block; margin-top: 4px; }
