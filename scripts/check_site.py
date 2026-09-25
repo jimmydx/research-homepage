@@ -23,7 +23,7 @@ class Site(HTMLParser):
             if a['id'] in self.ids:
                 self.errors.append('Duplicate id: ' + a['id'])
             self.ids.add(a['id'])
-        for key in ('href', 'src'):
+        for key in ('href', 'src', 'poster'):
             if key in a:
                 self.refs.append(a[key])
         if 'srcset' in a:

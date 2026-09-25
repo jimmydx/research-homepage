@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&amp;family=Source+Sans+3:wght@400;500;600&amp;family=Source+Serif+4:wght@400;500;600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script src="assets/js/main.js?v=20260925-carousel" defer></script>
+  <script src="assets/js/main.js?v=20260925-xr-model" defer></script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Person","name":"Jaime Aguilar Guerrero","url":"https://jimmydx.github.io/research-homepage/","jobTitle":"Research Scientist","affiliation":{"@type":"CollegeOrUniversity","name":"Embry-Riddle Aeronautical University"},"sameAs":["https://orcid.org/0000-0002-9160-3434","https://scholar.google.com/citations?user=5jckZ0QAAAAJ&hl=en","https://github.com/jimmydx"]}
   </script>
@@ -143,6 +143,13 @@
           <h4 id="xr-title">Extended reality &amp; spatial computing</h4>
           <div>
             <p>Blender supports the development of 3D scenes from volumetric atmospheric simulations and georeferenced observations for scientific exploration. Extended reality (XR) work includes hands-on experience with Apple Vision Pro and augmented reality headsets, allowing researchers and wider audiences to examine spatial relationships from different viewpoints. Atmospheric and space-physics context guides the presentation and interpretation of the data.</p>
+            <figure class="xr-model-figure">
+              <div class="xr-model-frame">
+                <model-viewer id="xr-awe-model" src="assets/models/awe-iss-globe-may2024.glb" poster="assets/images/awe-iss-globe-poster.webp" loading="lazy" alt="Interactive 3D visualization of the International Space Station orbiting a globe with AWE observation swaths over North America." camera-controls camera-orbit="25deg 75deg auto" touch-action="pan-y" auto-rotate auto-rotate-delay="0" rotation-per-second="5deg" autoplay animation-name="Animation" environment-image="neutral" exposure="1.18" shadow-intensity="0.12" interaction-prompt="none"></model-viewer>
+              </div>
+              <figcaption>May 26, 2024 AWE observations and ISS orbit · Drag to rotate; scroll or pinch to zoom. Visualization: Jaime Aguilar Guerrero / AWE Science Team. <a href="https://awe.physics.usu.edu/data/3d/">Explore the official USU gallery</a>.</figcaption>
+              <p class="xr-model-status" id="xr-model-status" role="status" hidden>The 3D model could not load here. The USU gallery link above remains available.</p>
+            </figure>
             <a href="#eos">Read the Eos perspective on XR in Earth and space science</a>
           </div>
         </section>

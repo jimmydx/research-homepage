@@ -46,3 +46,34 @@ if (track) {
   controls.hidden = slides.length < 2;
   update();
 }
+
+// Defer the 3D viewer library until the XR section is near the viewport.
+const xrModel = document.getElementById('xr-awe-model');
+if (xrModel) {
+  const status = document.getElementById('xr-model-status');
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const syncMotion = () => {
+    xrModel.toggleAttribute('auto-rotate', !reducedMotion.matches);
+    xrModel.toggleAttribute('autoplay', !reducedMotion.matches);
+  };
+  syncMotion();
+  reducedMotion.addEventListener?.('change', syncMotion);
+  xrModel.addEventListener('error', () => { status.hidden = false; });
+  const loadViewer = () => {
+    self.ModelViewerElement = self.ModelViewerElement || {};
+    self.ModelViewerElement.meshoptDecoderLocation = 'https://cdn.jsdelivr.net/npm/meshoptimizer@0.25.0/meshopt_decoder.js';
+    import('https://cdn.jsdelivr.net/npm/@google/model-viewer@4.3.1/dist/model-viewer.min.js')
+      .catch(() => { status.hidden = false; });
+  };
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      if (entries.some(entry => entry.isIntersecting)) {
+        observer.disconnect();
+        loadViewer();
+      }
+    }, {rootMargin: '300px'});
+    observer.observe(xrModel);
+  } else {
+    loadViewer();
+  }
+}
