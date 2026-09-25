@@ -248,7 +248,7 @@ h1 { font-size: clamp(48px, 5.5vw, 74px); line-height: 1.06; font-weight: 500; l
 .xr-feature { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 54px; border-top: 1px solid var(--line); border-bottom: 0; padding-bottom: 0; }
 .xr-copy > a { display: inline-block; margin-top: 18px; }
 .xr-model-figure { margin-top: 20px; }
-.xr-model-frame { aspect-ratio: 16 / 9; overflow: hidden; border: 1px solid var(--line); border-radius: 4px; background: #0c151e; }
+.xr-model-frame { aspect-ratio: 1; overflow: hidden; border: 1px solid var(--line); border-radius: 4px; background: #0c151e; }
 .xr-model-frame model-viewer { display: block; width: 100%; height: 100%; background: #0c151e url('../images/awe-iss-globe-poster.webp') center / cover no-repeat; }
 .xr-model-frame model-viewer:defined { background-image: none; }
 .xr-model-figure figcaption { margin-top: 10px; color: var(--muted); font-size: 14px; line-height: 1.5; }
@@ -258,7 +258,6 @@ h1 { font-size: clamp(48px, 5.5vw, 74px); line-height: 1.06; font-weight: 500; l
   .research-row h4 { font-size: 24px; }
   .research-visualization { padding-top: 36px; }
   .xr-feature { grid-template-columns: minmax(0, 1fr); gap: 26px; }
-  .xr-model-frame { aspect-ratio: 4 / 3; }
 }
 
 /* Desktop links span both introduction columns; mobile retains three rows. */
