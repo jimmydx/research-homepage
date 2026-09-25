@@ -109,3 +109,5 @@ Research organization revised to the user-approved plan: detailed expertise move
 Portfolio prose revised to neutral voice at Jaime’s request. Scientific activities are described directly; named third-person attribution is retained for PI and project-management roles. The literal “I Trust Science” wording in AGU photo alt text remains because it describes text visible in the photograph.
 
 Voice refinement: first person is used sparingly to identify the AWE principal-investigator role and current/previous project-management roles, as requested. Research descriptions remain neutral; personal names in headings, publication bylines, image descriptions, and copyright credits are retained.
+
+Footer profile icons reuse the ORCID and LinkedIn assets and add Font Awesome Free 6.x GitHub and Google Scholar SVG brand marks from the official FortAwesome/Font-Awesome repository. The existing Font Awesome license applies; icons are decorative alongside visible link labels.

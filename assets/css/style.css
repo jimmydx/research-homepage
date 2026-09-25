@@ -259,3 +259,8 @@ h1 { font-size: clamp(48px, 5.5vw, 74px); line-height: 1.06; font-weight: 500; l
   .hero-actions { grid-template-columns: repeat(4, minmax(0, 1fr)); max-width: none; }
   .hero-profiles { display: contents; }
 }
+
+.social-links a { display: inline-flex; align-items: center; gap: 8px; }
+.social-links .brand-icon { width: 19px; height: 19px; }
+.scholar-icon { color: var(--accent); -webkit-mask-image: url('../icons/google-scholar.svg'); mask-image: url('../icons/google-scholar.svg'); }
+.github-icon { -webkit-mask-image: url('../icons/github.svg'); mask-image: url('../icons/github.svg'); }
