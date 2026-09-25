@@ -35,7 +35,7 @@ Portrait, CEDAR 2026, and COSPAR 2026 photographs were supplied by Jaime on Sept
 
 Source mapping: `DSC08398.jpg` → `cedar-2026-*`; `DSC09819-2.jpg` → `cospar-2026-*`; `DSC08546_CRNR04-3.jpg` → `portrait-*`.
 
-AGU 2025 and EGU 2025 photos and photographer credits remain pending. The AGU caption comes from the existing abstract PDF and needs confirmation against the final presentation. Pending material is confined to local preview, and the publication check blocks release until resolved.
+AGU 2025 and EGU 2025 photos have been supplied; photographer credits are confirmed below. The AGU caption comes from the existing abstract PDF and needs confirmation against the final presentation. Pending material is confined to local preview, and the publication check blocks release until resolved.
 
 The maintained CV folder was checked. Its September 16 PDF is byte-identical to the previously reviewed draft (SHA-256 `0613de1208742ddf45eb28cd4ccc2f7330864b1ddeeb0362eeedb74c30884b6e`). It still contains inconsistent role wording and unresolved factual details, so no download is linked. Older versions are not substituted as current.
 
@@ -80,7 +80,7 @@ CEDAR workshop title: “Impacts of Natural and Artificial Hazards on the Upper 
 
 ## Three-photo introduction collage
 
-User selected overlapping layout C. The main portrait remains largest. Additional user-supplied originals are `Pictures/Photos Exports/IMG_0624.HEIC` (outdoor portrait) and `Pictures/Photos Exports/IMG_6562.HEIC` (guitar photograph), under the user's iCloud Drive. Originals were preserved. HEIC files were decoded with heif-convert and exported as 1000-pixel-wide WebP copies at quality 82 with metadata removed: `portrait-outdoors.webp` and `portrait-music.webp`. Cropping is implemented with CSS object-fit/object-position; no image content was generated or altered. Photographer credits remain to be confirmed.
+User selected overlapping layout C. The main portrait remains largest. Additional user-supplied originals are `Pictures/Photos Exports/IMG_0624.HEIC` (outdoor portrait) and `Pictures/Photos Exports/IMG_6562.HEIC` (guitar photograph), under the user's iCloud Drive. Originals were preserved. HEIC files were decoded with heif-convert and exported as 1000-pixel-wide WebP copies at quality 82 with metadata removed: `portrait-outdoors.webp` and `portrait-music.webp`. Cropping is implemented with CSS object-fit/object-position; no image content was generated or altered. Photographer credits confirmed by Jaime; see the photo copyright statement below.
 
 Main portrait updated to the user-supplied lighting revision `Pictures/Lightroom Exports/DSC08546_CRNR04.jpg` on September 25, 2026. The 600px and 1200px WebP copies were regenerated at quality 82 with metadata removed; the original is unchanged. The user selected Cinzel (option A) for the name.
 
@@ -99,3 +99,7 @@ Conference locations added to the event lines beneath photographs: COSPAR, Flore
 ## Eos article screenshot
 
 Captured the live published article in the browser on September 25, 2026: https://eos.org/features/extended-reality-offers-opportunities-for-scientific-show-and-tell . The header screenshot preserves the masthead, title, introduction, byline, and date; browser capture excludes the top advertisement and article body. Stored as `assets/images/eos-article-header.webp`, with direct article link and DOI attribution adjacent. No page content was reconstructed or altered.
+
+## Photo copyright confirmed
+
+On September 25, 2026, Jaime confirmed that all photographs he supplied were taken by him and are his copyright. Portrait, personal, mentoring, and conference photographs and their optimized derivatives are credited to Jaime Aguilar Guerrero, all rights reserved. The photo-credit publication gate is resolved. Scientific imagery, the Eos screenshot, and brand icons retain their separate source attributions; this statement does not claim those third-party materials.
