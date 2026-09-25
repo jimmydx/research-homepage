@@ -201,3 +201,11 @@ h1 { font-size: clamp(48px, 5.5vw, 74px); line-height: 1.06; font-weight: 500; l
 
 .conference-slide .conference-session { font-size: 16px; line-height: 1.5; }
 .conference-session span { color: var(--sand); font-weight: 600; margin-right: .4em; }
+
+/* Overlapping three-photo composition; the main portrait stays dominant. */
+.portrait-collage { position: relative; width: 100%; max-width: 440px; aspect-ratio: 1.05; justify-self: center; }
+.portrait-collage img { position: absolute; object-fit: cover; border: 5px solid #17232b; border-radius: 4px; box-shadow: 0 8px 25px #0003; }
+.portrait-collage .collage-main { left: 5%; top: 0; width: 70%; height: 82%; object-position: 49% 42%; }
+.portrait-collage .collage-outdoors { right: 0; top: 12%; width: 32%; height: 37%; object-position: 53% 45%; }
+.portrait-collage .collage-music { right: 0; bottom: 0; width: 52%; height: 40%; object-position: 63% 55%; }
+@media (max-width: 800px) { .portrait-collage { margin: 36px auto 0; } }
