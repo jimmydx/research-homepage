@@ -103,3 +103,5 @@ Captured the live published article in the browser on September 25, 2026: https:
 ## Photo copyright confirmed
 
 On September 25, 2026, Jaime confirmed that all photographs he supplied were taken by him and are his copyright. Portrait, personal, mentoring, and conference photographs and their optimized derivatives are credited to Jaime Aguilar Guerrero, all rights reserved. The photo-credit publication gate is resolved. Scientific imagery, the Eos screenshot, and brand icons retain their separate source attributions; this statement does not claim those third-party materials.
+
+Research organization revised to the user-approved plan: detailed expertise moved from About into unnumbered scientific investigation and analysis subsections, followed by a distinct visualization and XR subsection. Content uses the previously supplied research capabilities; no new methods or achievements are asserted. Project role descriptions and scientific image credits are preserved.
