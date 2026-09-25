@@ -34,3 +34,11 @@ The original video and official gallery remain the authoritative sources for dat
 Portrait, CEDAR 2026, and COSPAR 2026 photos are not supplied yet. Their placeholders are restricted to the development preview. Captions and photographer credits must be confirmed from the supplied originals before publishing.
 
 The maintained CV folder was checked. Its September 16 PDF is byte-identical to the previously reviewed draft (SHA-256 `0613de1208742ddf45eb28cd4ccc2f7330864b1ddeeb0362eeedb74c30884b6e`). It still contains inconsistent role wording and unresolved factual details, so no download is linked. Older versions are not substituted as current.
+
+## Project objectives added September 25
+
+The MITIGATE overview paraphrases the ERAU announcement: connect severe-weather sources, atmospheric gravity-wave propagation, and ionospheric effects through observations and coupled modeling, toward better forecasting of effects on radio propagation and positioning/navigation.
+
+The AtmoSense overview paraphrases DARPA's program description: understand energy propagation from transient surface events through the atmosphere to the ionosphere and explore the information in remotely detectable signatures. Past tense reflects DARPA's completed-program status. The AIRWaveS sentence draws on ERAU's description of source-to-sensor simulations, field tests, signal detectability, and model validation.
+
+The revised smaller typography and earth/blue palette follow the user's feedback; they intentionally update the earlier mockups.
