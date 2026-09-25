@@ -107,3 +107,5 @@ On September 25, 2026, Jaime confirmed that all photographs he supplied were tak
 Research organization revised to the user-approved plan: detailed expertise moved from About into unnumbered scientific investigation and analysis subsections, followed by a distinct visualization and XR subsection. Content uses the previously supplied research capabilities; no new methods or achievements are asserted. Project role descriptions and scientific image credits are preserved.
 
 Portfolio prose revised to neutral voice at Jaime’s request. Scientific activities are described directly; named third-person attribution is retained for PI and project-management roles. The literal “I Trust Science” wording in AGU photo alt text remains because it describes text visible in the photograph.
+
+Voice refinement: first person is used sparingly to identify the AWE principal-investigator role and current/previous project-management roles, as requested. Research descriptions remain neutral; personal names in headings, publication bylines, image descriptions, and copyright credits are retained.
