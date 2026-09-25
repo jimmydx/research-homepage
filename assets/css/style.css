@@ -13,7 +13,7 @@
 }
 * { box-sizing: border-box; }
 html { scroll-padding-top: 32px; }
-body { margin: 0; background: var(--bg) url('../images/ripples-navy.svg') center top / max(100%, 1000px) auto repeat-y; color: var(--ink); font: 18px/1.6 var(--sans); -webkit-font-smoothing: antialiased; }
+body { margin: 0; background-color: var(--bg); background-image: url('../images/ripples-navy.svg'), linear-gradient(125deg, #101922 0%, #172a34 48%, #111c24 100%); background-position: center top; background-size: max(100%, 1000px) auto, 100% 100%; background-repeat: repeat-y, no-repeat; color: var(--ink); font: 18px/1.6 var(--sans); -webkit-font-smoothing: antialiased; }
 [hidden] { display: none !important; }
 a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 5px; }
 a:hover { color: #c9e8f5; }
@@ -64,7 +64,7 @@ h1 span { display: block; }
 .portrait { aspect-ratio: 4/5; width: 100%; max-width: 300px; justify-self: center; }
 .photo-placeholder { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; padding: 24px; border: 1px solid #6e736d; border-radius: 3px; background: #293337; color: #b4bbb7; text-align: center; font-size: 18px; }
 .photo-placeholder svg { width: 124px; fill: none; stroke: #8293a0; stroke-width: 1.2; }
-.band { background: var(--surface) url('../images/ripples-earth.svg') center top / max(100%, 1000px) auto repeat-y; border-top: 1px solid #887c69; }
+.band { background-color: var(--surface); background-image: url('../images/ripples-earth.svg'), linear-gradient(115deg, #242720 0%, #343027 55%, #282720 100%); background-position: center top; background-size: max(100%, 1000px) auto, 100% 100%; background-repeat: repeat-y, no-repeat; border-top: 1px solid #887c69; }
 .about { padding-block: 54px 60px; }
 .about-layout { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 60px; }
 .section-label { color: var(--sand); font-size: 36px; }
