@@ -252,3 +252,10 @@ h1 { font-size: clamp(48px, 5.5vw, 74px); line-height: 1.06; font-weight: 500; l
   .research-row h4 { font-size: 24px; }
   .research-visualization { padding-top: 36px; }
 }
+
+/* Desktop links span both introduction columns; mobile retains three rows. */
+@media (min-width: 801px) {
+  .hero.has-portrait { grid-template-areas: "copy portrait" "links links"; }
+  .hero-actions { grid-template-columns: repeat(4, minmax(0, 1fr)); max-width: none; }
+  .hero-profiles { display: contents; }
+}
