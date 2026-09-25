@@ -35,7 +35,7 @@ Portrait, CEDAR 2026, and COSPAR 2026 photographs were supplied by Jaime on Sept
 
 Source mapping: `DSC08398.jpg` → `cedar-2026-*`; `DSC09819-2.jpg` → `cospar-2026-*`; `DSC08546_CRNR04-3.jpg` → `portrait-*`.
 
-AGU 2025 and EGU 2025 photos, photographer credits, and the COSPAR title/link remain pending. The AGU caption comes from the existing abstract PDF and needs confirmation against the final presentation. Pending material is confined to local preview, and the publication check blocks release until resolved.
+AGU 2025 and EGU 2025 photos and photographer credits remain pending. The AGU caption comes from the existing abstract PDF and needs confirmation against the final presentation. Pending material is confined to local preview, and the publication check blocks release until resolved.
 
 The maintained CV folder was checked. Its September 16 PDF is byte-identical to the previously reviewed draft (SHA-256 `0613de1208742ddf45eb28cd4ccc2f7330864b1ddeeb0362eeedb74c30884b6e`). It still contains inconsistent role wording and unresolved factual details, so no download is linked. Older versions are not substituted as current.
 
@@ -69,3 +69,11 @@ ORCID and LinkedIn marks are local SVG assets from Font Awesome Free 6.x (FortAw
 - EGU 2025: https://meetingorganizer.copernicus.org/EGU25/EGU25-13773.html documents “Observing Mesospheric Gravity Waves with NASA’s AWE Mission and Correlating to GNSS TEC Maps,” first author Jaime Aguilar Guerrero.
 - AGU 2025: existing `assets/docs/AGU-2025-abstract.pdf`; title reproduced in the development preview pending confirmation.
 - COSPAR event identification and Florence/August 2026 come from the supplied photograph's lectern signage; no presentation title inferred.
+
+## Session names and reverse chronological order
+
+Carousel order: COSPAR (August 2026), CEDAR (June 2026), AGU (December 2025), EGU (May 2025).
+
+COSPAR verified directly in the official browser-accessible archive: https://www.cospar-assembly.org/admin/session_cospar.php?session=1423 . Event C0.2, “Advances in Remote Sensing of the Middle and Upper Atmospheres and Ionosphere from the Ground and from Space, including Sounding Rockets, Novel Radar and Multi-instrument Studies.” Accepted oral presentation by Jaime Aguilar Guerrero: “Synthetic Multi-Instrument Forward Modeling for Convectively Driven AGW in MAGIC, GEMINI, and FIGMENTS,” August 7, 2026, 09:50–10:10, Spadolini lower 10. Abstract: https://www.cospar-assembly.org/user/download.php?id=40007&type=abstract&section=congressbrowser .
+
+CEDAR workshop title: “Impacts of Natural and Artificial Hazards on the Upper Atmosphere,” June 26, 2026, from the previously cited official program. EGU session ST3.3: “Dynamics, Chemistry, and Coupling in the Middle Atmosphere and MLT Regions,” May 1, 2025, at https://meetingorganizer.copernicus.org/EGU25/session/53617 . AGU session SA013, “Gravity Waves, From the Surface to the Edge of Space,” comes from the existing abstract PDF and remains subject to the same final-presentation confirmation.

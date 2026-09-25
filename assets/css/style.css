@@ -198,3 +198,6 @@ h1 { font-size: clamp(48px, 5.5vw, 74px); line-height: 1.06; font-weight: 500; l
   .social-links a + a { padding-left: 18px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+.conference-slide .conference-session { font-size: 16px; line-height: 1.5; }
+.conference-session span { color: var(--sand); font-weight: 600; margin-right: .4em; }
