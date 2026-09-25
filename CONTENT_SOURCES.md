@@ -81,3 +81,5 @@ CEDAR workshop title: “Impacts of Natural and Artificial Hazards on the Upper 
 ## Three-photo introduction collage
 
 User selected overlapping layout C. The main portrait remains largest. Additional user-supplied originals are `Pictures/Photos Exports/IMG_0624.HEIC` (outdoor portrait) and `Pictures/Photos Exports/IMG_6562.HEIC` (guitar photograph), under the user's iCloud Drive. Originals were preserved. HEIC files were decoded with heif-convert and exported as 1000-pixel-wide WebP copies at quality 82 with metadata removed: `portrait-outdoors.webp` and `portrait-music.webp`. Cropping is implemented with CSS object-fit/object-position; no image content was generated or altered. Photographer credits remain to be confirmed.
+
+Main portrait updated to the user-supplied lighting revision `Pictures/Lightroom Exports/DSC08546_CRNR04.jpg` on September 25, 2026. The 600px and 1200px WebP copies were regenerated at quality 82 with metadata removed; the original is unchanged. The user selected Cinzel (option A) for the name.
