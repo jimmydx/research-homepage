@@ -85,3 +85,7 @@ User selected overlapping layout C. The main portrait remains largest. Additiona
 Main portrait updated to the user-supplied lighting revision `Pictures/Lightroom Exports/DSC08546_CRNR04.jpg` on September 25, 2026. The 600px and 1200px WebP copies were regenerated at quality 82 with metadata removed; the original is unchanged. The user selected Cinzel (option A) for the name.
 
 EGU 2025 photograph supplied by Jaime: `Pictures/Lightroom Exports/DSC00271.jpg` under iCloud Drive (5422 × 3873). Original preserved; 800px and 1600px WebP copies exported at quality 82 with metadata removed. The carousel displays the full photograph in its existing frame. EGU caption and session references remain unchanged.
+
+## Student mentoring
+
+Mentoring scope (undergraduate MATLAB, Python, and Blender skills for analyses and visualization of multilayer systems) supplied directly by Jaime. Supporting descriptions use the research activities already confirmed for this portfolio. User-supplied photographs from iCloud Drive `Pictures/Photos Exports`: `ab159b6f-8c8d-495c-92c7-28b7f0bd7563.jpeg` anchors the collage; `dd6a941d-4d2a-4c61-8185-e2de013dd102.jpeg` is smaller at bottom right. Originals preserved; responsive WebP copies exported at quality 82 with metadata removed. No student identities or event dates inferred.
