@@ -227,3 +227,6 @@ h1 { font-size: clamp(48px, 5.5vw, 74px); line-height: 1.06; font-weight: 500; l
   .mentoring-layout { grid-template-columns: minmax(0, 1fr); gap: 32px; }
   .mentoring-lead { font-size: 23px; }
 }
+
+.mentoring-photos { width: 100%; max-width: 450px; margin: 0; justify-self: center; }
+.mentoring-photos figcaption { margin-top: 16px; color: var(--muted); font-size: 14px; line-height: 1.5; }
