@@ -95,3 +95,7 @@ AGU 2025 photograph supplied by Jaime: `Pictures/Lightroom Exports/IMG_2660.jpg`
 Mentoring photo caption: Jaime identified the event as ERAU Research Match Day 2025. The caption links to the official event description on https://erau.edu/research-and-innovation/undergraduate-research/daytona-beach (verified September 25, 2026). This is a general event reference, not a dedicated 2025 article; the indexed CampusGroups event is for September 28, 2026 and was not used for the 2025 caption.
 
 Conference locations added to the event lines beneath photographs: COSPAR, Florence, Italy (previously verified program); CEDAR, Des Moines, Iowa, USA (https://cedarscience.org/2026-workshop); AGU, New Orleans, Louisiana, USA (https://www.agu.org/annual-meeting-2025); EGU, Vienna, Austria (https://www.egu25.eu/about/general_information.html). Location sources checked September 25, 2026.
+
+## Eos article screenshot
+
+Captured the live published article in the browser on September 25, 2026: https://eos.org/features/extended-reality-offers-opportunities-for-scientific-show-and-tell . The header screenshot preserves the masthead, title, introduction, byline, and date; browser capture excludes the top advertisement and article body. Stored as `assets/images/eos-article-header.webp`, with direct article link and DOI attribution adjacent. No page content was reconstructed or altered.
