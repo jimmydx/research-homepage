@@ -1,46 +1,13 @@
-const navToggle = document.querySelector(".nav-toggle");
-const siteNav = document.querySelector(".site-nav");
-const navLinks = document.querySelectorAll(".site-nav a");
+// Content and navigation work without JavaScript.
+const year = document.getElementById('current-year');
+if (year) year.textContent = String(new Date().getFullYear());
 
-if (navToggle && siteNav) {
-  navToggle.addEventListener("click", () => {
-    const expanded = navToggle.getAttribute("aria-expanded") === "true";
-    navToggle.setAttribute("aria-expanded", String(!expanded));
-    siteNav.classList.toggle("is-open");
+// Unsupplied photos are visible only in an explicitly requested local preview.
+const isLocalPreview = ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname)
+  && new URLSearchParams(location.search).get('preview') === '1';
+if (isLocalPreview) {
+  document.querySelectorAll('[data-photo-slot], [data-photo-section]').forEach(slot => {
+    slot.hidden = false;
   });
-
-  navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      navToggle.setAttribute("aria-expanded", "false");
-      siteNav.classList.remove("is-open");
-    });
-  });
-}
-
-const revealElements = document.querySelectorAll(".reveal");
-
-if ("IntersectionObserver" in window) {
-  const observer = new IntersectionObserver(
-    (entries, obs) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          obs.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      rootMargin: "0px 0px -10% 0px",
-      threshold: 0.18
-    }
-  );
-
-  revealElements.forEach((el) => observer.observe(el));
-} else {
-  revealElements.forEach((el) => el.classList.add("is-visible"));
-}
-
-const currentYear = document.getElementById("current-year");
-if (currentYear) {
-  currentYear.textContent = String(new Date().getFullYear());
+  document.querySelector('.hero')?.classList.add('has-portrait');
 }

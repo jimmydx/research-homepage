@@ -1,43 +1,33 @@
-# Professional Research Homepage
+# Jaime Aguilar Guerrero — Research portfolio
 
-Single-page static site for a research-focused professional homepage, ready for GitHub Pages project-site deployment.
+Responsive static HTML/CSS portfolio for `https://jimmydx.github.io/research-homepage/`. No build, backend, API keys, or JavaScript dependency for navigation and content. The existing MIT license is preserved.
 
-## Files
+## Local preview
 
-- `index.html` - Canonical content source and page structure
-- `assets/css/style.css` - Visual system, layout, responsive behavior, accessibility styling
-- `assets/js/main.js` - Mobile nav behavior, reveal animations, footer year update
-- `assets/images/*` - Local SVG visuals (hero, project graphics, social preview)
-- `assets/docs/CV.pdf` - Placeholder CV PDF (replace with your real CV while keeping filename)
-- `assets/docs/AGU-2025-abstract.pdf` - AGU abstract PDF used in selected outputs
-- `assets/docs/CEDAR-2025-slides.pdf` - CEDAR presentation slides used in selected outputs
+Serve the parent directory so the site is tested with its GitHub Pages project prefix:
 
-## Publish On GitHub Pages (Project Site)
+```sh
+python3 -m http.server 8765 --bind 127.0.0.1 --directory ..
+```
 
-1. Create a GitHub repository (any name, for example `research-home`).
-2. Push this folder contents to the repository root.
-3. In GitHub, open `Settings` -> `Pages`.
-4. Set Source to `Deploy from a branch`.
-5. Choose branch `main`, folder `/ (root)`, then click Save.
-6. Wait for GitHub Pages to build, then open:
-   `https://<username>.github.io/<repo>/`
+Open `http://localhost:8765/research-homepage/?preview=1`. The `preview=1` option shows the three unsupplied photo slots **on loopback hosts only**. Without that option, or without JavaScript, the placeholders stay hidden and all research content remains available.
 
-Current `index.html` metadata is configured for:
+## Before publishing
 
-- `https://jimmydx.github.io/research-homepage/`
+- Supply the portrait, CEDAR 2026, and COSPAR 2026 photographs. Keep full-resolution originals outside the deployment directory. Create optimized website derivatives, preserve natural colors, and confirm captions, photographer credits, alt text, and crop focal points.
+- Portrait frame: 4:5. Conference frames: 3:2. Accept originals in either orientation; do not overwrite them.
+- Replace each `.photo-pending` figure with a responsive `<picture>` and its real caption. Keep `.hero.has-portrait` in the static HTML and remove `hidden` from the conference section. Remove the loopback-only placeholder code from `assets/js/main.js` when all photos are supplied.
+- No CV download is linked. The September 16 PDF remains an unconfirmed draft, and the obsolete website copy has been removed (it remains in Git history). Add a download only after reviewing a confirmed final PDF.
+- Run `python3 scripts/check_site.py`, then `python3 scripts/check_site.py --publish`. The publication check intentionally fails while photos are pending.
+- Check desktop/mobile, keyboard focus, reduced motion, and JavaScript-disabled rendering. Review image crops, every external link, and any PDF downloads.
+- Merge the completed work into `main`. Configure GitHub Pages to deploy from `main` / root, then check the live homepage, images, and links under `/research-homepage/`.
+- Use the homepage URL in the NASA reviewer form only after the live deployment is verified.
 
-## Before Going Live
+## Editing
 
-Update these placeholders in `index.html`:
+- `index.html`: biography, research features, selected publications, contact links.
+- `assets/css/style.css`: shared colors, type, layouts, breakpoints, focus, and reduced-motion behavior.
+- `assets/js/main.js`: optional year update and temporary local photo preview.
+- `CONTENT_SOURCES.md`: public references and scientific image provenance.
 
-- Any project media embeds you want to replace
-
-Replace this file with your real CV:
-
-- `assets/docs/CV.pdf`
-
-## Notes
-
-- All asset paths are relative, so the site works for GitHub project URLs.
-- Embedded video sources are currently demo links.
-- No tracking scripts are included.
+No demo video, generated scientific illustration, or unverified final CV is presented in the page.
