@@ -29,13 +29,13 @@ The official USU gallery identifies the visualization work with Jaime Aguilar Gu
 
 The original video and official gallery remain the authoritative sources for data interpretation and full credits. No concept artwork is shipped as scientific evidence.
 
-## Pending photography and CV
+## Photography and CV
 
 Portrait, CEDAR 2026, and COSPAR 2026 photographs were supplied by Jaime on September 25. Originals remain untouched in the user's Lightroom Exports folder. WebP derivatives use quality 82 with metadata omitted: portrait at widths 600/1200; conference photos at 800/1600. Portrait display uses a 4:5 CSS crop; conference frames are 3:2 with contain sizing to preserve full scene content, including the COSPAR lectern. No generated image content or color edits.
 
 Source mapping: `DSC08398.jpg` → `cedar-2026-*`; `DSC09819-2.jpg` → `cospar-2026-*`; `DSC08546_CRNR04-3.jpg` → `portrait-*`.
 
-AGU 2025 and EGU 2025 photos have been supplied; photographer credits are confirmed below. The AGU caption comes from the existing abstract PDF and needs confirmation against the final presentation. Pending material is confined to local preview, and the publication check blocks release until resolved.
+AGU 2025 and EGU 2025 photos have been supplied; photographer credits are confirmed below. The official [AGU25 program listing](https://agu.confex.com/agu/f/EarthCoveringAGU25) lists Jaime Aguilar Guerrero as a presenter of the title shown on the page in session SA013. The AGU slide image is captioned as a conference photograph; it does not imply that the photo depicts the presentation itself.
 
 The maintained CV folder was checked. Its September 16 PDF is byte-identical to the previously reviewed draft (SHA-256 `0613de1208742ddf45eb28cd4ccc2f7330864b1ddeeb0362eeedb74c30884b6e`). It still contains inconsistent role wording and unresolved factual details, so no download is linked. Older versions are not substituted as current.
 
@@ -67,7 +67,7 @@ ORCID and LinkedIn marks are local SVG assets from Font Awesome Free 6.x (FortAw
 
 - CEDAR 2026: https://cedarscience.org/workshop/2026-workshop-hazards lists Jaime's talk, “Multi-layer Characterization of Convective Gravity Waves from the CGWaveS Campaign, AWE, and GNSS.” The visible projected slide in the supplied photograph is consistent with this title.
 - EGU 2025: https://meetingorganizer.copernicus.org/EGU25/EGU25-13773.html documents “Observing Mesospheric Gravity Waves with NASA’s AWE Mission and Correlating to GNSS TEC Maps,” first author Jaime Aguilar Guerrero.
-- AGU 2025: existing `assets/docs/AGU-2025-abstract.pdf`; title reproduced in the development preview pending confirmation.
+- AGU 2025: official [AGU25 program listing](https://agu.confex.com/agu/f/EarthCoveringAGU25) confirms the title, presenting author, and session SA013, “Gravity Waves, From the Surface to the Edge of Space.”
 - COSPAR event identification and Florence/August 2026 come from the supplied photograph's lectern signage; no presentation title inferred.
 
 ## Session names and reverse chronological order
@@ -76,7 +76,7 @@ Carousel order: COSPAR (August 2026), CEDAR (June 2026), AGU (December 2025), EG
 
 COSPAR verified directly in the official browser-accessible archive: https://www.cospar-assembly.org/admin/session_cospar.php?session=1423 . Event C0.2, “Advances in Remote Sensing of the Middle and Upper Atmospheres and Ionosphere from the Ground and from Space, including Sounding Rockets, Novel Radar and Multi-instrument Studies.” Accepted oral presentation by Jaime Aguilar Guerrero: “Synthetic Multi-Instrument Forward Modeling for Convectively Driven AGW in MAGIC, GEMINI, and FIGMENTS,” August 7, 2026, 09:50–10:10, Spadolini lower 10. Abstract: https://www.cospar-assembly.org/user/download.php?id=40007&type=abstract&section=congressbrowser .
 
-CEDAR workshop title: “Impacts of Natural and Artificial Hazards on the Upper Atmosphere,” June 26, 2026, from the previously cited official program. EGU session ST3.3: “Dynamics, Chemistry, and Coupling in the Middle Atmosphere and MLT Regions,” May 1, 2025, at https://meetingorganizer.copernicus.org/EGU25/session/53617 . AGU session SA013, “Gravity Waves, From the Surface to the Edge of Space,” comes from the existing abstract PDF and remains subject to the same final-presentation confirmation.
+CEDAR workshop title: “Impacts of Natural and Artificial Hazards on the Upper Atmosphere,” June 26, 2026, from the previously cited official program. EGU session ST3.3: “Dynamics, Chemistry, and Coupling in the Middle Atmosphere and MLT Regions,” May 1, 2025, at https://meetingorganizer.copernicus.org/EGU25/session/53617 . AGU session SA013, “Gravity Waves, From the Surface to the Edge of Space,” and the presented paper title are listed in the official AGU25 program.
 
 ## Three-photo introduction collage
 
@@ -90,7 +90,7 @@ EGU 2025 photograph supplied by Jaime: `Pictures/Lightroom Exports/DSC00271.jpg`
 
 Mentoring scope (undergraduate MATLAB, Python, and Blender skills for analyses and visualization of multilayer systems) supplied directly by Jaime. Supporting descriptions use the research activities already confirmed for this portfolio. User-supplied photographs from iCloud Drive `Pictures/Photos Exports`: `ab159b6f-8c8d-495c-92c7-28b7f0bd7563.jpeg` anchors the collage; `dd6a941d-4d2a-4c61-8185-e2de013dd102.jpeg` is smaller at bottom right. Originals preserved; responsive WebP copies exported at quality 82 with metadata removed. No student identities or event dates inferred.
 
-AGU 2025 photograph supplied by Jaime: `Pictures/Lightroom Exports/IMG_2660.jpg` under iCloud Drive (3874 × 2767). Original preserved; 800px and 1600px WebP copies exported at quality 82 with metadata removed. Full image retained in the carousel frame. The photo confirms the event but does not establish the final presentation title; existing abstract confirmation remains pending.
+AGU 2025 photograph supplied by Jaime: `Pictures/Lightroom Exports/IMG_2660.jpg` under iCloud Drive (3874 × 2767). Original preserved; 800px and 1600px WebP copies exported at quality 82 with metadata removed. Full image retained in the carousel frame. The official AGU25 program independently confirms the presenter, title, and session; the visible image is described only as a conference photograph.
 
 Mentoring photo caption: Jaime identified the event as ERAU Research Match Day 2025. The caption links to the official event description on https://erau.edu/research-and-innovation/undergraduate-research/daytona-beach (verified September 25, 2026). This is a general event reference, not a dedicated 2025 article; the indexed CampusGroups event is for September 28, 2026 and was not used for the 2025 caption.
 

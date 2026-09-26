@@ -10,18 +10,14 @@ Serve the parent directory so the site is tested with its GitHub Pages project p
 python3 -m http.server 8765 --bind 127.0.0.1 --directory ..
 ```
 
-Open `http://localhost:8765/research-homepage/?preview=1`. The `preview=1` option shows the three unsupplied photo slots **on loopback hosts only**. Without that option, or without JavaScript, the placeholders stay hidden and all research content remains available.
+Open `http://localhost:8765/research-homepage/`. All supplied portrait and conference photographs are included; no preview-only photo slots remain.
 
-## Before publishing
+## Publishing
 
-- Supply the portrait, CEDAR 2026, and COSPAR 2026 photographs. Keep full-resolution originals outside the deployment directory. Create optimized website derivatives, preserve natural colors, and confirm captions, photographer credits, alt text, and crop focal points.
-- Portrait frame: 4:5. Conference frames: 3:2. Accept originals in either orientation; do not overwrite them.
-- Replace each `.photo-pending` figure with a responsive `<picture>` and its real caption. Keep `.hero.has-portrait` in the static HTML and remove `hidden` from the conference section. Remove the loopback-only placeholder code from `assets/js/main.js` when all photos are supplied.
-- No CV download is linked. The September 16 PDF remains an unconfirmed draft, and the obsolete website copy has been removed (it remains in Git history). Add a download only after reviewing a confirmed final PDF.
-- Run `python3 scripts/check_site.py`, then `python3 scripts/check_site.py --publish`. The publication check intentionally fails while photos are pending.
-- Check desktop/mobile, keyboard focus, reduced motion, and JavaScript-disabled rendering. Review image crops, every external link, and any PDF downloads.
-- Merge the completed work into `main`. Configure GitHub Pages to deploy from `main` / root, then check the live homepage, images, and links under `/research-homepage/`.
-- Use the homepage URL in the NASA reviewer form only after the live deployment is verified.
+- The portrait and conference photographs are supplied by Jaime; optimized responsive derivatives are stored in `assets/images/`. Full-resolution originals remain outside the deployment directory.
+- The unfinished CV draft is not linked for download.
+- Run `python3 scripts/check_site.py` and `python3 scripts/check_site.py --publish` before release. Check desktop/mobile layouts, keyboard navigation, reduced motion, and JavaScript-disabled content.
+- GitHub Pages serves the project from `main` at the repository root. Verify the homepage and image assets under `/research-homepage/` after deployment.
 
 ## Editing
 
