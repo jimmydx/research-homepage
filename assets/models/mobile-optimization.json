@@ -1,0 +1,267 @@
+{
+  "before": {
+    "bytes": 12152992,
+    "meshes": 134,
+    "primitives": 346,
+    "vertices": 1042430,
+    "triangles": 553821,
+    "estimatedTextureMiBWithMipmaps": 181.58398437499997,
+    "textures": [
+      {
+        "name": "ISS_02",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "name": "ISS_01",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "name": "ISS_AO_02",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "name": "ISS_01_n",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "name": "ISS_AO_01",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "name": "ISS_03",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "name": "ISS_AO_03",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "name": "foil_n",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "name": "ISS_03_n",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "name": "ISS_AO_04",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "name": "ISS_AO_06",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "name": "ISS_04",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "name": "ISS_AO_05",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "name": "ISS_AO_07",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "name": "ISS_AO_08",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "name": "ecostress",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "name": "ISS_03.jpg",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "name": "foil_n",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "name": "ISS_03.png",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "name": "radiance-AWE-May-26th-mix-GLOBE-emiss",
+        "width": 4096,
+        "height": 2048
+      },
+      {
+        "name": "radiance-AWE-May-26th-mix-GLOBE-color",
+        "width": 4096,
+        "height": 2048
+      },
+      {
+        "name": "radiance-AWE-May-26th-mix-AWE-UV-ECEF-wgs84-0001-emiss",
+        "width": 262,
+        "height": 4096
+      },
+      {
+        "name": "radiance-AWE-May-26th-mix-AWE-UV-ECEF-wgs84-0001-color",
+        "width": 262,
+        "height": 4096
+      },
+      {
+        "name": "PaletteBaseColor",
+        "width": 32,
+        "height": 4
+      }
+    ]
+  },
+  "after": {
+    "bytes": 10518240,
+    "meshes": 18,
+    "primitives": 30,
+    "vertices": 523766,
+    "triangles": 511643,
+    "estimatedTextureMiBWithMipmaps": 38.583984375,
+    "textures": [
+      {
+        "name": "ISS_02",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "ISS_01",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "ISS_AO_02",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "ISS_01_n",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "ISS_AO_01",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "ISS_03",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "ISS_AO_03",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "foil_n",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "ISS_03_n",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "ISS_AO_04",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "ISS_AO_06",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "ISS_04",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "ISS_AO_05",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "ISS_AO_07",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "ISS_AO_08",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "ecostress",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "ISS_03.jpg",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "foil_n",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "ISS_03.png",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "radiance-AWE-May-26th-mix-GLOBE-emiss",
+        "width": 2048,
+        "height": 1024
+      },
+      {
+        "name": "radiance-AWE-May-26th-mix-GLOBE-color",
+        "width": 2048,
+        "height": 1024
+      },
+      {
+        "name": "radiance-AWE-May-26th-mix-AWE-UV-ECEF-wgs84-0001-emiss",
+        "width": 262,
+        "height": 4096
+      },
+      {
+        "name": "radiance-AWE-May-26th-mix-AWE-UV-ECEF-wgs84-0001-color",
+        "width": 262,
+        "height": 4096
+      },
+      {
+        "name": "PaletteBaseColor",
+        "width": 32,
+        "height": 4
+      }
+    ]
+  },
+  "validation": {
+    "scienceGeometryAndTransformsUnchanged": true,
+    "orbitAnimationUnchanged": true,
+    "aweTexturesUnchanged": true
+  }
+}

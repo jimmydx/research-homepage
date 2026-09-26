@@ -47,33 +47,61 @@ if (track) {
   update();
 }
 
-// Defer the 3D viewer library until the XR section is near the viewport.
+// Select the asset before importing the viewer so mobile never fetches the desktop GLB.
 const xrModel = document.getElementById('xr-awe-model');
 if (xrModel) {
   const status = document.getElementById('xr-model-status');
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const mobile = matchMedia('(max-width: 800px), (pointer: coarse)').matches;
+  let visible = false;
+  let started = false;
+  let failed = false;
+  if (!mobile) xrModel.setAttribute('src', xrModel.dataset.desktopSrc);
+  if (mobile) xrModel.setAttribute('shadow-intensity', '0');
   const syncMotion = () => {
-    xrModel.toggleAttribute('auto-rotate', !reducedMotion.matches);
-    xrModel.toggleAttribute('autoplay', !reducedMotion.matches);
+    const animate = visible && !document.hidden && !reducedMotion.matches && !failed;
+    xrModel.toggleAttribute('auto-rotate', animate);
+    xrModel.toggleAttribute('autoplay', animate);
+    if (animate) xrModel.play?.();
+    else xrModel.pause?.();
+  };
+  const showFallback = () => {
+    failed = true;
+    status.hidden = false;
+    syncMotion();
+    xrModel.showPoster?.();
   };
   syncMotion();
   reducedMotion.addEventListener?.('change', syncMotion);
-  xrModel.addEventListener('error', () => { status.hidden = false; });
-  const loadViewer = () => {
+  document.addEventListener('visibilitychange', syncMotion);
+  xrModel.addEventListener('load', syncMotion);
+  xrModel.addEventListener('pause', () => { xrModel.dataset.playback = 'paused'; });
+  xrModel.addEventListener('play', () => { xrModel.dataset.playback = 'playing'; });
+  xrModel.addEventListener('error', showFallback);
+  const loadViewer = async () => {
+    if (started) return;
+    started = true;
     self.ModelViewerElement = self.ModelViewerElement || {};
     self.ModelViewerElement.meshoptDecoderLocation = 'https://cdn.jsdelivr.net/npm/meshoptimizer@0.25.0/meshopt_decoder.js';
-    import('https://cdn.jsdelivr.net/npm/@google/model-viewer@4.3.1/dist/model-viewer.min.js')
-      .catch(() => { status.hidden = false; });
+    if (mobile) self.ModelViewerElement.powerPreference = 'low-power';
+    try {
+      const {ModelViewerElement} = await import('https://cdn.jsdelivr.net/npm/@google/model-viewer@4.3.1/dist/model-viewer.min.js');
+      ModelViewerElement.modelCacheSize = 0;
+      if (mobile) ModelViewerElement.minimumRenderScale = 0.25;
+      syncMotion();
+    } catch {
+      showFallback();
+    }
   };
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(entries => {
-      if (entries.some(entry => entry.isIntersecting)) {
-        observer.disconnect();
-        loadViewer();
-      }
-    }, {rootMargin: '300px'});
+      visible = entries.some(entry => entry.isIntersecting);
+      if (visible) loadViewer();
+      syncMotion();
+    });
     observer.observe(xrModel);
   } else {
+    visible = true;
     loadViewer();
   }
 }
