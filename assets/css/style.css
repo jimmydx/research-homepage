@@ -245,9 +245,10 @@ h1 { font-size: clamp(48px, 5.5vw, 74px); line-height: 1.06; font-weight: 500; l
 .research-visualization h3, .research-visualization h4 { color: var(--sand); }
 .visualization-intro { max-width: 850px; margin-top: 18px; color: var(--muted); }
 .feature-copy .feature-label { color: var(--clay); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 12px; }
-.xr-feature { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 54px; border-top: 1px solid var(--line); border-bottom: 0; padding-bottom: 0; }
+.xr-feature { grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 54px; border-top: 1px solid var(--line); border-bottom: 0; padding-bottom: 0; }
+.xr-copy { max-width: 460px; }
 .xr-copy > a { display: inline-block; margin-top: 18px; }
-.xr-model-figure { margin-top: 20px; }
+.xr-model-figure { max-width: 340px; margin-top: 20px; }
 .xr-model-frame { aspect-ratio: 1; overflow: hidden; border: 1px solid var(--line); border-radius: 4px; background: #0c151e; }
 .xr-model-frame model-viewer { display: block; width: 100%; height: 100%; background: #0c151e url('../images/awe-iss-globe-poster.webp') center / cover no-repeat; }
 .xr-model-frame model-viewer:defined { background-image: none; }
@@ -257,6 +258,8 @@ h1 { font-size: clamp(48px, 5.5vw, 74px); line-height: 1.06; font-weight: 500; l
   .research-row { grid-template-columns: minmax(0, 1fr); gap: 16px; padding-block: 24px; }
   .research-row h4 { font-size: 24px; }
   .research-visualization { padding-top: 36px; }
+}
+@media (max-width: 900px) {
   .xr-feature { grid-template-columns: minmax(0, 1fr); gap: 26px; }
 }
 
