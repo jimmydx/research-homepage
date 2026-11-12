@@ -20,19 +20,32 @@ if (track) {
   const previous = controls.querySelector('[data-carousel-prev]');
   const next = controls.querySelector('[data-carousel-next]');
   const status = controls.querySelector('.carousel-status');
-  let current = 0;
+  const tolerance = 2;
   const offset = slide => slide.getBoundingClientRect().left - track.getBoundingClientRect().left + track.scrollLeft;
+  const maxScroll = () => Math.max(0, track.scrollWidth - track.clientWidth);
+  // The final two cards share a stop on desktop; never navigate to it twice.
+  function stops() {
+    return slides.map(slide => Math.min(offset(slide), maxScroll()))
+      .filter((position, i, positions) => i === 0 || position - positions[i - 1] > tolerance);
+  }
   function update() {
-    current = slides.reduce((best, slide, i) => Math.abs(offset(slide) - track.scrollLeft) < Math.abs(offset(slides[best]) - track.scrollLeft) ? i : best, 0);
-    // The last slide can stop short of the left edge when it is narrower than the track.
-    if (track.scrollLeft > 0 && track.scrollLeft + track.clientWidth >= track.scrollWidth - 2) current = slides.length - 1;
-    previous.disabled = current === 0;
-    next.disabled = current === slides.length - 1;
-    status.textContent = `${current + 1} / ${slides.length}`;
+    previous.disabled = track.scrollLeft <= tolerance;
+    next.disabled = track.scrollLeft >= maxScroll() - tolerance;
+    const bounds = track.getBoundingClientRect();
+    const visible = slides.map((slide, index) => ({index, bounds: slide.getBoundingClientRect()}))
+      .filter(slide => slide.bounds.left >= bounds.left - tolerance && slide.bounds.right <= bounds.right + tolerance);
+    // During a resize or manual drag there may be no fully visible card yet.
+    if (!visible.length) return;
+    const first = visible[0].index + 1;
+    const last = visible[visible.length - 1].index + 1;
+    const label = `${first === last ? first : `${first}–${last}`} / ${slides.length}`;
+    if (status.textContent !== label) status.textContent = label;
   }
   function move(step) {
-    const target = Math.max(0, Math.min(slides.length - 1, current + step));
-    track.scrollTo({left: offset(slides[target]), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
+    const positions = stops();
+    const current = positions.reduce((best, position, i) => Math.abs(position - track.scrollLeft) < Math.abs(positions[best] - track.scrollLeft) ? i : best, 0);
+    const target = Math.max(0, Math.min(positions.length - 1, current + step));
+    track.scrollTo({left: positions[target], behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
   }
   previous.addEventListener('click', () => move(-1));
   next.addEventListener('click', () => move(1));
