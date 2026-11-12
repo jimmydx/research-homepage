@@ -12,6 +12,107 @@ if (isLocalPreview) {
   document.querySelector('.hero')?.classList.add('has-portrait');
 }
 
+// Keep native anchor links clear of the actual, possibly wrapped, sticky header.
+const siteHeader = document.querySelector('.site-header');
+if (siteHeader) {
+  const links = [...siteHeader.querySelectorAll('nav a[href^="#"]')];
+  const sections = links.map(link => ({link, section: document.querySelector(link.getAttribute('href'))}))
+    .filter(item => item.section);
+  let navFrame = 0;
+  function updateNavigation() {
+    navFrame = 0;
+    const threshold = siteHeader.getBoundingClientRect().height + 32;
+    let current;
+    for (const item of sections) {
+      if (item.section.getBoundingClientRect().top <= threshold) current = item.link;
+    }
+    if (scrollY > 0 && scrollY + innerHeight >= document.documentElement.scrollHeight - 2) {
+      current = sections.at(-1)?.link;
+    }
+    for (const link of links) {
+      if (link === current) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+    }
+  }
+  function scheduleNavigation() {
+    if (!navFrame) navFrame = requestAnimationFrame(updateNavigation);
+  }
+  function measureHeader() {
+    document.documentElement.style.setProperty('--header-height', `${siteHeader.getBoundingClientRect().height}px`);
+    scheduleNavigation();
+  }
+  if ('ResizeObserver' in window) new ResizeObserver(measureHeader).observe(siteHeader);
+  window.addEventListener('resize', measureHeader);
+  window.addEventListener('scroll', scheduleNavigation, {passive: true});
+  window.addEventListener('load', measureHeader, {once: true});
+  measureHeader();
+}
+
+// Native dialogs provide Escape dismissal, modal focus, and a larger view of the data.
+const mediaDialog = document.getElementById('media-dialog');
+if (mediaDialog && typeof mediaDialog.showModal === 'function') {
+  const body = mediaDialog.querySelector('.media-dialog-body');
+  const title = mediaDialog.querySelector('#media-dialog-title');
+  let opener;
+  let movedFigure;
+  let placeholder;
+  const announceView = () => document.dispatchEvent(new Event('media-view-change'));
+  function openMedia(trigger, label) {
+    opener = trigger;
+    title.textContent = label;
+    document.body.classList.add('has-media-dialog');
+    mediaDialog.showModal();
+    announceView();
+  }
+  document.querySelectorAll('[data-enlarge-image]').forEach(link => {
+    link.setAttribute('aria-haspopup', 'dialog');
+    link.setAttribute('aria-controls', 'media-dialog');
+    link.addEventListener('click', event => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      const source = link.closest('figure');
+      const figure = document.createElement('figure');
+      const image = document.createElement('img');
+      image.src = link.href;
+      image.alt = source.querySelector('img').alt;
+      figure.append(image, source.querySelector('figcaption').cloneNode(true));
+      body.replaceChildren(figure);
+      openMedia(link, 'AWE observations and weather context');
+    });
+  });
+  const enlargeModel = document.querySelector('[data-enlarge-model]');
+  if (enlargeModel) {
+    enlargeModel.hidden = false;
+    enlargeModel.addEventListener('click', () => {
+      movedFigure = enlargeModel.closest('figure');
+      const size = movedFigure.getBoundingClientRect();
+      placeholder = document.createElement('div');
+      placeholder.className = 'xr-model-figure';
+      placeholder.style.width = `${size.width}px`;
+      placeholder.style.height = `${size.height}px`;
+      placeholder.setAttribute('aria-hidden', 'true');
+      movedFigure.before(placeholder);
+      // Move the existing viewer; never create a second WebGL model/context.
+      body.replaceChildren(movedFigure);
+      openMedia(enlargeModel, 'Interactive AWE visualization');
+    });
+  }
+  mediaDialog.querySelector('[data-close-media]').addEventListener('click', () => mediaDialog.close());
+  mediaDialog.addEventListener('click', event => {
+    const bounds = mediaDialog.getBoundingClientRect();
+    if (event.target === mediaDialog && (event.clientX < bounds.left || event.clientX > bounds.right
+      || event.clientY < bounds.top || event.clientY > bounds.bottom)) mediaDialog.close();
+  });
+  mediaDialog.addEventListener('close', () => {
+    if (movedFigure) placeholder.replaceWith(movedFigure);
+    movedFigure = placeholder = null;
+    body.replaceChildren();
+    document.body.classList.remove('has-media-dialog');
+    announceView();
+    opener?.focus({preventScroll: true});
+  });
+}
+
 // Native horizontal scrolling remains available without JavaScript; no autoplay.
 const track = document.getElementById('conference-track');
 if (track) {
@@ -23,7 +124,7 @@ if (track) {
   const tolerance = 2;
   const offset = slide => slide.getBoundingClientRect().left - track.getBoundingClientRect().left + track.scrollLeft;
   const maxScroll = () => Math.max(0, track.scrollWidth - track.clientWidth);
-  // The final two cards share a stop on desktop; never navigate to it twice.
+  // Cards in the final visible group share a stop; never navigate to it twice.
   function stops() {
     return slides.map(slide => Math.min(offset(slide), maxScroll()))
       .filter((position, i, positions) => i === 0 || position - positions[i - 1] > tolerance);
@@ -66,17 +167,27 @@ if (xrModel) {
   const status = document.getElementById('xr-model-status');
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const mobile = matchMedia('(max-width: 800px), (pointer: coarse)').matches;
+  const motionButton = document.querySelector('[data-motion-toggle]');
+  document.querySelector('.model-controls').hidden = false;
   let visible = false;
   let started = false;
   let failed = false;
+  let ready = false;
+  // An explicit Play choice can override reduced motion; a changed preference resets it.
+  let motionChoice = null;
   if (!mobile) xrModel.setAttribute('src', xrModel.dataset.desktopSrc);
   if (mobile) xrModel.setAttribute('shadow-intensity', '0');
   const syncMotion = () => {
-    const animate = visible && !document.hidden && !reducedMotion.matches && !failed;
+    const paused = motionChoice ?? reducedMotion.matches;
+    const obscured = mediaDialog?.open && !mediaDialog.contains(xrModel);
+    const animate = visible && !document.hidden && !paused && !failed && !obscured;
     xrModel.toggleAttribute('auto-rotate', animate);
     xrModel.toggleAttribute('autoplay', animate);
     if (animate) xrModel.play?.();
     else xrModel.pause?.();
+    motionButton.textContent = paused ? 'Play' : 'Pause';
+    motionButton.setAttribute('aria-label', `${paused ? 'Play' : 'Pause'} model animation`);
+    motionButton.disabled = !ready || failed;
   };
   const showFallback = () => {
     failed = true;
@@ -85,9 +196,14 @@ if (xrModel) {
     xrModel.showPoster?.();
   };
   syncMotion();
-  reducedMotion.addEventListener?.('change', syncMotion);
+  motionButton.addEventListener('click', () => {
+    motionChoice = !(motionChoice ?? reducedMotion.matches);
+    syncMotion();
+  });
+  reducedMotion.addEventListener?.('change', () => { motionChoice = null; syncMotion(); });
   document.addEventListener('visibilitychange', syncMotion);
-  xrModel.addEventListener('load', syncMotion);
+  document.addEventListener('media-view-change', syncMotion);
+  xrModel.addEventListener('load', () => { ready = true; syncMotion(); });
   xrModel.addEventListener('pause', () => { xrModel.dataset.playback = 'paused'; });
   xrModel.addEventListener('play', () => { xrModel.dataset.playback = 'playing'; });
   xrModel.addEventListener('error', showFallback);

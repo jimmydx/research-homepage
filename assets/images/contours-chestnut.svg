@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
   <defs>
-    <linearGradient id="edge"><stop stop-color="white" stop-opacity="1"/><stop offset=".24" stop-color="white" stop-opacity=".12"/><stop offset=".5" stop-color="white" stop-opacity="0"/><stop offset=".76" stop-color="white" stop-opacity=".12"/><stop offset="1" stop-color="white" stop-opacity="1"/></linearGradient>
+    <linearGradient id="edge"><stop stop-color="white" stop-opacity="1"/><stop offset=".12" stop-color="white" stop-opacity=".15"/><stop offset=".3" stop-color="white" stop-opacity="0"/><stop offset=".7" stop-color="white" stop-opacity="0"/><stop offset=".88" stop-color="white" stop-opacity=".15"/><stop offset="1" stop-color="white" stop-opacity="1"/></linearGradient>
     <linearGradient id="vertical" x2="0" y2="1"><stop stop-color="white" stop-opacity="0"/><stop offset=".12" stop-color="white"/><stop offset=".85" stop-color="white"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient>
     <mask id="fade"><path d="M0 0h1600v900H0z" fill="url(#vertical)"/></mask>
     <mask id="edges"><path d="M0 0h1600v900H0z" fill="url(#edge)"/></mask>
@@ -21,7 +21,7 @@
 <path stroke-width="1.7" d="M1546 330 C1356 412 1516 495 1376 558 S1276 636 1356 728 S1516 810 1456 960"/>
 <path stroke-width="1.4" d="M93 -40 C268 35 158 116 283 151 S433 239 308 330 S108 420 73 540"/>
 <path stroke-width="2.2" d="M1512 330 C1322 412 1482 495 1342 558 S1242 636 1322 728 S1482 810 1422 960"/>
-</g><g opacity=".025">
+</g><g mask="url(#edges)" opacity=".018">
 <path stroke-width="18" d="M-100 220 C240 335 390 40 730 135 S1210 250 1700 -70"/>
 <path stroke-width="11" d="M-100 269 C240 384 390 89 730 184 S1210 299 1700 -21"/>
 <path stroke-width="24" d="M-100 341 C240 456 390 161 730 256 S1210 371 1700 51"/>

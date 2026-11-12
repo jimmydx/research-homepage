@@ -59,7 +59,8 @@ def main():
             site.errors.append('Missing local asset: ' + ref)
     for css in (ROOT / 'assets/css').glob('*.css'):
         for ref in re.findall(r'url\([\'\"]?([^\)\'\"]+)', css.read_text()):
-            if not urlsplit(ref).scheme and not (css.parent / ref).is_file():
+            parts = urlsplit(ref)
+            if not parts.scheme and not (css.parent / unquote(parts.path)).is_file():
                 site.errors.append('Missing CSS asset: ' + ref)
     if args.publish and site.pending:
         site.errors.append('Publication items still pending: ' + ', '.join(site.pending))
