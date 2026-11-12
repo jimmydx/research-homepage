@@ -92,7 +92,7 @@ Mentoring scope (undergraduate MATLAB, Python, and Blender skills for analyses a
 
 AGU 2025 photograph supplied by Jaime: `Pictures/Lightroom Exports/IMG_2660.jpg` under iCloud Drive (3874 × 2767). Original preserved; 800px and 1600px WebP copies exported at quality 82 with metadata removed. Full image retained in the carousel frame. The official AGU25 program independently confirms the presenter, title, and session; the visible image is described only as a conference photograph.
 
-Mentoring photo caption: Jaime identified the event as ERAU Research Match Day 2025. The caption links to the official event description on https://erau.edu/research-and-innovation/undergraduate-research/daytona-beach (verified September 25, 2026). This is a general event reference, not a dedicated 2025 article; the indexed CampusGroups event is for September 28, 2026 and was not used for the 2025 caption.
+Mentoring photo dates corrected by Jaime on November 12, 2026: the two original photographs are from Spring 2026, not 2025. The added `Pictures/Lightroom Exports/IMG_3832.jpg` is from Fall 2026. The visible caption is “ERAU Match Day Spring & Fall 2026.” The caption retains the general official event reference at https://erau.edu/research-and-innovation/undergraduate-research/daytona-beach (originally verified September 25, 2026); it is not presented as a dedicated article about either photographed event.
 
 Conference locations added to the event lines beneath photographs: COSPAR, Florence, Italy (previously verified program); CEDAR, Des Moines, Iowa, USA (https://cedarscience.org/2026-workshop); AGU, New Orleans, Louisiana, USA (https://www.agu.org/annual-meeting-2025); EGU, Vienna, Austria (https://www.egu25.eu/about/general_information.html). Location sources checked September 25, 2026.
 
@@ -144,3 +144,13 @@ Revised the hero, About, research, visualization/XR, mentoring, Eos summary, con
 Terminology checked against primary sources on November 2: [ECMWF ERA5](https://www.ecmwf.int/en/forecasts/datasets/complete-era5-global-atmospheric-reanalysis), [NASA MERRA-2](https://gmao.gsfc.nasa.gov/gmao-products/merra-2/), [NCAR WACCM-X](https://www.cesm.ucar.edu/models/waccm-x), [NRL NAVGEM](https://www.nrl.navy.mil/Media/News/Article/2563127/nrl-receives-navy-acquisition-excellence-award-for-global-weather-prediction-mo/), and [NASA AIRS](https://science.nasa.gov/mission/aqua/airs/). ERA5 and MERRA-2 are identified as reanalyses; NAVGEM and WACCM-X are identified as model products. These sources establish system terminology, not personal experience.
 
 Copy verification: the site checker passes (37 anchors, 81 references), with no whitespace errors. Desktop (1280px) and mobile (390px) browser review found no horizontal overflow or broken loaded images. The About-to-Research link works and no console warnings/errors were recorded. Paragraph copy is approximately 15% shorter than before this revision. A small CSS correction keeps the affiliation link inline on mobile. All changes remain local.
+
+## COSPAR header photo framing — November 11, 2026
+
+The small upper-right header photograph now reuses `cospar-2026-1600.webp`, derived from Jaime’s supplied `DSC09819-2.jpg`. A CSS viewport crop centers Jaime, the microphone, and the upper part of the podium. The source photograph and full conference image are unchanged; no retouching or generated image content is used. The main portrait and guitar photograph retain their approved framing. This change is local for review and has not been published.
+
+## Match Day third photograph — November 12, 2026
+
+Added Jaime’s `IMG_3832.jpg` (3174 × 4232) to the mentoring collage. Full-frame 480 × 640 and 960 × 1280 WebP derivatives use quality 82 without source metadata. The original is untouched, with no cropping, retouching, or generated content. The three-photo composition retains the Spring main image on the left and the smaller Spring group image at lower right, with the Fall photograph at upper right. Alt text identifies the Spring and Fall 2026 events separately. Changes remain local for review.
+
+November 12 release: Jaime approved publication of the accumulated COSPAR header crop, subtle fading copper side borders, corrected Spring/Fall 2026 Match Day collage, and the exact hero wording “Researcher in atmospheric coupling and dynamics.” The Fall image is slightly enlarged, offset to the right, and layered beneath the lower Spring photo without overlapping the main Spring image.
